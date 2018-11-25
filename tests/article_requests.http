@@ -1,0 +1,17 @@
+
+GET http://localhost:5000/articles
+Content-Type: application/json
+
+{
+    "request-type": "listAll"
+}
+
+###
+
+GET http://localhost:5000/articles
+Content-Type: application/json
+
+{
+    "request-type": "findById",
+    "id": 2
+}
