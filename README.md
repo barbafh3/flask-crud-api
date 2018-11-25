@@ -44,8 +44,8 @@ it should also include the id of the article to be returned
 
 The expected success response depends on request type:
 
-* Request Type `listAll`: Should respond with a JSON formatted instances of all articles
-* Request Type `findById`: Should respond with a JSON formatted instances of all articles
+* Request Type `listAll`: Should respond with JSON formatted instances of all articles
+* Request Type `findById`: Should respond with a JSON formatted instance of article
 
 #### Error Response:
 
