@@ -1,22 +1,22 @@
 # Flask-CRUD-API
 
-##    Root
+##    Root URL: http://localhost:5000
 
 ###    URL: http://localhost:5000/
 
 ###    Usage
 
-Methods: GET
+#### Methods: GET
 
-URL Params
+#### URL Params
 
-    This request requires no parameters
+This request requires no parameters
 
-Success Response:
+#### Success Response:
 
     Should respond by showing this README.md file
 
-Notes:
+#### Notes:
 
     This is just an example README.md file for academical purposes
 
@@ -24,9 +24,9 @@ Notes:
 
 ###    URL: http://localhost:5000/articles
 
-Methods: GET
+#### Methods: GET
 
-URL Params
+#### URL Params
 
 ```json
 "request-type": ["listAll", "findById"]
