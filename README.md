@@ -28,7 +28,7 @@
 
         URL Params
 
-            ```
+            ```json
             {
                 "request-type": ["listAll", "findById"]
                 "id": "ID parameter"
