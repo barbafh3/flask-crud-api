@@ -42,11 +42,16 @@ it should also include the id of the article to be returned
 
 #### Success Response:
 
+The expected success response depends on request type:
+
 * Request Type `listAll`: Should respond with a JSON formatted instances of all articles
 * Request Type `findById`: Should respond with a JSON formatted instances of all articles
 
 #### Error Response:
 
-Should return an error in case of missing parameters, when no articles for `listAll` or
-when no article with the id parameter was found.
+Should return an error in case of:
+
+* When required parameters are missing
+* When no articles for `listAll` 
+* When no article with the id parameter was found.
 
