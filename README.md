@@ -6,30 +6,30 @@
 
 ###    Usage
 
-        Methods: GET
+Methods: GET
 
-        URL Params
+URL Params
 
-            This request requires no parameters
+    This request requires no parameters
 
-        Success Response:
+Success Response:
 
-            Should respond by showing this README.md file
+    Should respond by showing this README.md file
 
-        Notes:
+Notes:
 
-            This is just an example README.md file for academical purposes
+    This is just an example README.md file for academical purposes
 
 ##    Articles
 
 ###    URL: http://localhost:5000/articles
 
-        Methods: GET
+Methods: GET
 
-        URL Params
+URL Params
 
-            ```json
-            "request-type": ["listAll", "findById"]
-            "id": "ID parameter"            
-            ```
+```json
+"request-type": ["listAll", "findById"]
+"id": "ID parameter"            
+```
 
