@@ -28,7 +28,7 @@ Includes all methods associated with the model `Article`
 
 #### Note:
 
-All article requests require a Authorization header with a valid JWT security token:
+All article requests require an Authorization header with a valid JWT security token:
 
 * ``Authorization: JWT <Example-Token-Here>``
 
