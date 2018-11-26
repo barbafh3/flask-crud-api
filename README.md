@@ -26,12 +26,17 @@ This is just an example README.md file for academical purposes
 
 Includes all methods associated with the model `Article`
 
+#### Note:
+
+All article requests require a Authorization header with a valid security token:
+
+    Authorization: JWT Example-Token-Here
+
 #### Method: GET
 
 #### URL Params
 
-This request expects one of two possible request types: `listAll` or `findById`, and in case of the latter,
-it should also include the id of the article to be returned
+This request expects one of these possible request types: `listAll`, `findById` and `search`
 
 * Request Type `listAll`:
 ```json
