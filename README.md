@@ -52,7 +52,7 @@ This request expects one of these possible request types: `listAll`, `findById` 
     "id": "article_id"
 }
 ```
-* Request Type `search`(neither title nor text is required here):
+* Request Type `search` (neither `"title"` nor `"text"` is required here):
 ```json
 {
     "request-type": "findById",
