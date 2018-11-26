@@ -4,11 +4,9 @@ inblude/
 lib/
 lib64/
 
-# pycaches
-api/__pycache__
-api/controllers/__pycache__
-api/db/__pycache__
-api/models/__pycache__
+# pycache files
+*.pyc
+*.pyo
 
 
 # venv files
