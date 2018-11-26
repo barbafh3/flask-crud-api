@@ -57,9 +57,9 @@ This request expects one of these possible request types: `listAll`, `findById` 
 {
     "request-type": "findById",
     "args": {
-        "title": "title example",  // Not required
-        "text": "text example"     // Not required
-}
+        "title": "title example",  [//]: #  Not required
+        "text": "text example"     [//]: #  Not required
+    }
 }
 ```
 
