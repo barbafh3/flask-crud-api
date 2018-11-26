@@ -4,7 +4,7 @@ inblude/
 lib/
 lib64/
 
-# pycache files
+# pycache filesgit rm lib64
 *.pyc
 *.pyo
 
