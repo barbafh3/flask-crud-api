@@ -8,8 +8,8 @@ from flask_marshmallow import Marshmallow
 app = Flask(__name__)
 ma = Marshmallow(app)
 
-from api.config import *
-from api.db.db import *
+import api.config 
+import api.db.db
 
 @app.route('/')
 def readme():

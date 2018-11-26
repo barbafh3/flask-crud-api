@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 # Import all model definitions from /api/db/models.py
-from api.models.article import *
+import api.models.article
 
 # Import declarative base from /api/db/base.py
 from api.db.base import Base
