@@ -52,13 +52,13 @@ This request expects one of these possible request types: `listAll`, `findById` 
     "id": "article_id"
 }
 ```
-* Request Type `search`:
+* Request Type `search`(neither title nor text is required here):
 ```json
 {
     "request-type": "findById",
     "args": {
-        "title": "title example",  [//]: #  Not required
-        "text": "text example"     [//]: #  Not required
+        "title": "title example", 
+        "text": "text example"     
     }
 }
 ```
