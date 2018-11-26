@@ -1,7 +1,16 @@
+# venv folders
 bin/
 inblude/
 lib/
 lib64/
 
+# pycaches
+api/__pycache__
+api/controllers/__pycache__
+api/db/__pycache__
+api/models/__pycache__
+
+
+# venv files
 pip-selfcheck.json
 pyvenv.cfg

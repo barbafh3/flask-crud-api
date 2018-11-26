@@ -4,12 +4,20 @@ import os
 from flask import Flask
 from flask_restful import Api
 from flask_marshmallow import Marshmallow
+from flask_jwt import JWT, jwt_required
+from flask_bcrypt import Bcrypt
+
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'super-duper-secret'
 ma = Marshmallow(app)
+bcrypt = Bcrypt(app)
 
 import api.config 
 import api.db.db
+from api.controllers.login_controller import verify, identity
+
+jwt = JWT(app, verify, identity)
 
 @app.route('/')
 def readme():
