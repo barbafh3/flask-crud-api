@@ -1,12 +1,14 @@
 from flask import request, jsonify
 from flask_restful import Resource
 from sqlalchemy import func
+from flask_jwt import jwt_required
 
-from api.models.article import *
+from api.models.article import Article, article_schema, articles_schema
 from api.db.db import session
 
 class Articles(Resource):
 
+    @jwt_required()
     def get(self):
         json_request = request.get_json()
         # Checking if the request content exists and if the request-type field exists
@@ -69,6 +71,7 @@ class Articles(Resource):
                 }
             return response, 400
 
+    @jwt_required()
     def post(self):
         json_request = request.get_json()
         # Checking if the request content exists and if the required fields text and title exist
@@ -96,7 +99,8 @@ class Articles(Resource):
                     "message": "This page requires a JSON formatted HTTP request and cannot be accessed directly"
                 }
             return response, 400
-
+            
+    @jwt_required()
     def put(self):
         json_request = request.get_json()
         # Checking if the request content exists and if the required fields text and title exist
@@ -133,6 +137,7 @@ class Articles(Resource):
                 }
             return response, 400
 
+    @jwt_required()
     def delete(self):
         json_request = request.get_json()
         # Checking if the request content exists and if the request-type field exists

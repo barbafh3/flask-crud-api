@@ -1,0 +1,15 @@
+@host = http://localhost:5000/users
+
+
+GET {{host}}
+
+
+###
+
+POST {{host}}
+Content-Type: application/json
+
+{
+    "username": "teste4",
+    "password": "teste123"
+}

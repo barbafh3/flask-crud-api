@@ -12,7 +12,7 @@ class User(Base):
 
 class UserSchema(ma.Schema):
     class Meta:
-        fields = ('id','title','text')
+        fields = ('id','username','password')
 
 user_schema = UserSchema()
 users_schema = UserSchema(many=True)

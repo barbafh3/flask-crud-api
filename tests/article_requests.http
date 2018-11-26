@@ -1,10 +1,12 @@
 @host = http://localhost:5000/articles
+@jwt = JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDMyMDM4OTUsImlhdCI6MTU0MzIwMzU5NSwibmJmIjoxNTQzMjAzNTk1LCJpZGVudGl0eSI6M30.PcJ2cvjah2hhRc9xX_m5YYFjzCDol8AOcUIQy1cBwd4
 GET {{host}}
 
 ###
 
 GET {{host}}
 Content-Type: application/json
+Authorization: {{jwt}}
 
 {
     "request-type": "listAll"
@@ -58,7 +60,8 @@ Content-Type: application/json
 
 DELETE {{host}}
 Content-Type: application/json
+Authorization: {{jwt}}
 
 {
-    "id": 1
+    "id": 16
 }
