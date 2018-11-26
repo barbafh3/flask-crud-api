@@ -73,9 +73,9 @@ The expected success response depends on request type:
 
 #### Error Response:
 
-Should return an error in case of:
+Requests should return an error when:
 
-* When required parameters are missing
-* When no articles for `listAll` 
-* When no article with the id parameter was found.
+* Required parameters are missing
+* No articles for `listAll` 
+* No article with the id parameter was found.
 
