@@ -36,7 +36,7 @@ it should also include the id of the article to be returned
 * Request Type `listAll`:
 ```json
 {
-
+    "request-type": "listAll"
 }
 ```
 
