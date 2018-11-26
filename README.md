@@ -33,10 +33,28 @@ Includes all methods associated with the model `Article`
 This request expects one of two possible request types: `listAll` or `findById`, and in case of the latter,
 it should also include the id of the article to be returned
 
+* Request Type `listAll`:
 ```json
 {
-"request-type": "listAll",
+"request-type": "listAll"
+}
+```
+
+* Request Type `findById`:
+```json
+{
+"request-type": "findById",
 "id": "article_id"
+}
+```
+* Request Type `search`:
+```json
+{
+"request-type": "findById",
+"args": {
+    "title": "title example",  // Not required
+    "text": "text example"     // Not required
+}
 }
 ```
 
@@ -44,8 +62,9 @@ it should also include the id of the article to be returned
 
 The expected success response depends on request type:
 
-* Request Type `listAll`: Should respond with JSON formatted instances of all articles
+* Request Type `listAll`: Should respond with JSON formatted list of all articles
 * Request Type `findById`: Should respond with a JSON formatted instance of article
+* Request Type `search`: Should respond with a JSON formatted list of articles as search result
 
 #### Error Response:
 

@@ -1,5 +1,9 @@
+@host = http://localhost:5000/articles
+GET {{host}}
 
-GET http://localhost:5000/articles
+###
+
+GET {{host}}
 Content-Type: application/json
 
 {
@@ -8,10 +12,53 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:5000/articles
+GET {{host}}
 Content-Type: application/json
 
 {
     "request-type": "findById",
-    "id": 2
+    "id": 3
+}
+
+###
+
+GET {{host}}
+Content-Type: application/json
+
+{
+    "request-type": "search",
+    "args": {
+        "text": "texto 2"
+    }
+}
+
+###
+
+POST {{host}}
+Content-Type: application/json
+
+{
+    "title": "sdlfjbhsdlhifb2222222",
+    "text": "nvnvnvnvnvnvnvnv22222222"
+}
+
+
+###
+
+PUT {{host}}
+Content-Type: application/json
+
+{
+    "id": 8,
+    "title": "asdfaaaaaa",
+    "text": "asdf2222"
+}
+
+###
+
+DELETE {{host}}
+Content-Type: application/json
+
+{
+    "id": 1
 }
