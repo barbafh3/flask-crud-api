@@ -36,24 +36,24 @@ it should also include the id of the article to be returned
 * Request Type `listAll`:
 ```json
 {
-"request-type": "listAll"
+
 }
 ```
 
 * Request Type `findById`:
 ```json
 {
-"request-type": "findById",
-"id": "article_id"
+    "request-type": "findById",
+    "id": "article_id"
 }
 ```
 * Request Type `search`:
 ```json
 {
-"request-type": "findById",
-"args": {
-    "title": "title example",  // Not required
-    "text": "text example"     // Not required
+    "request-type": "findById",
+    "args": {
+        "title": "title example",  // Not required
+        "text": "text example"     // Not required
 }
 }
 ```
