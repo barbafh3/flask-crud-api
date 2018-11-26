@@ -45,7 +45,7 @@ This request expects one of these possible request types: `listAll`, `findById` 
 }
 ```
 
-* Request Type `findById`:
+* Request Type `findById` (`"id"` is required here):
 ```json
 {
     "request-type": "findById",
