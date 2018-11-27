@@ -1,12 +1,12 @@
-@host = http://localhost:5000/articles
-@jwt = JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDMyMDM4OTUsImlhdCI6MTU0MzIwMzU5NSwibmJmIjoxNTQzMjAzNTk1LCJpZGVudGl0eSI6M30.PcJ2cvjah2hhRc9xX_m5YYFjzCDol8AOcUIQy1cBwd4
+@host = https://localhost:5000/articles
+@jwt = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDMzMzU3MjgsImlhdCI6MTU0MzMzNTQyOCwibmJmIjoxNTQzMzM1NDI4LCJpZGVudGl0eSI6MX0.uaFveoaRvuAO2FWwJkbBrCflzg9ymn9KAJiBDT2cUQQ
 GET {{host}}
 
 ###
 
 GET {{host}}
 Content-Type: application/json
-Authorization: {{jwt}}
+Authorization: JWT {{jwt}}
 
 {
     "request-type": "listAll"
@@ -16,6 +16,7 @@ Authorization: {{jwt}}
 
 GET {{host}}
 Content-Type: application/json
+Authorization: JWT {{jwt}}
 
 {
     "request-type": "findById",
@@ -26,11 +27,12 @@ Content-Type: application/json
 
 GET {{host}}
 Content-Type: application/json
+Authorization: JWT {{jwt}}
 
 {
     "request-type": "search",
     "args": {
-        "text": "texto 2"
+        "text": "texto"
     }
 }
 
@@ -38,10 +40,11 @@ Content-Type: application/json
 
 POST {{host}}
 Content-Type: application/json
+Authorization: JWT {{jwt}}
 
 {
-    "title": "sdlfjbhsdlhifb2222222",
-    "text": "texto 2"
+    "title": "sdlfjbhsdlhifb33333",
+    "text": "texto 33"
 }
 
 
@@ -49,19 +52,20 @@ Content-Type: application/json
 
 PUT {{host}}
 Content-Type: application/json
+Authorization: JWT {{jwt}}
 
 {
-    "id": 8,
-    "title": "asdfaaaaaa",
-    "text": "asdf2222"
+    "id": 3,
+    "title": "asdfaaaaaa44444",
+    "text": "texto 44"
 }
 
 ###
 
 DELETE {{host}}
 Content-Type: application/json
-Authorization: {{jwt}}
+Authorization: JWT {{jwt}}
 
 {
-    "id": 16
+    "id": 14
 }

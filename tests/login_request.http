@@ -1,9 +1,9 @@
-@host = http://localhost:5000
+@host = https://localhost:5000
 
 POST {{host}}/auth
 Content-Type: application/json
 
 {
-    "username": "teste3",
+    "username": "teste",
     "password": "teste123"
 }

@@ -82,13 +82,9 @@ class Articles(Resource):
                     session.add(new_article)
                     session.commit()
                     response = article_schema.dump(new_article)
-                    return jsonify(response.data)
+                    return response
                 except Exception as e:
-                    response = {
-                        "message": "An internal error occurred when trying to save the article",
-                        "errorLog": e 
-                    }
-                    return response, 500    
+                    return e
             else:
                 response = {
                     "message": "Both title and text fields are required"
@@ -122,7 +118,7 @@ class Articles(Resource):
                     session.add(article)
                     session.commit()
                     response = article_schema.dump(article)
-                    return jsonify(response.data), 200
+                    return response.data, 200
                 except Exception as e:
                     return e, 500
             else:
